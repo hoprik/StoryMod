@@ -29,27 +29,27 @@ jobs:
       - name: build
         run: ./gradlew build
       - name: capture build artifacts
-        if: ${{ runner.os == 'Linux' && matrix.java == '17' }} # Only upload artifacts built from latest java on one OS
+        if: ${{ runner.os == 'Linux' && matrix.java == '8' }} # Only upload artifacts built from latest java on one OS
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts
           path: build/libs/
-      - name: Get main mc version from tag
-        id: get_mc_version
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{ secrets.RELEASE_NOTES_TOKEN }}
-          result-encoding: string
-          script: |
-            return '${{ github.ref }}'.match(/refs\/tags\/(.*)\/v((.*)-(.*))/)[3];
-      - name: Get file version from tag
-        id: get_version
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{ secrets.RELEASE_NOTES_TOKEN }}
-          result-encoding: string
-          script: |
-            return '${{ github.ref }}'.match(/refs\/tags\/(.*)\/v((.*)-(.*))/)[4];
+#       - name: Get main mc version from tag
+#         id: get_mc_version
+#         uses: actions/github-script@v6
+#         with:
+#           github-token: ${{ secrets.RELEASE_NOTES_TOKEN }}
+#           result-encoding: string
+#           script: |
+#             return '${{ github.ref }}'.match(/refs\/tags\/(.*)\/v((.*)-(.*))/)[3];
+#       - name: Get file version from tag
+#         id: get_version
+#         uses: actions/github-script@v6
+#         with:
+#           github-token: ${{ secrets.RELEASE_NOTES_TOKEN }}
+#           result-encoding: string
+#           script: |
+#             return '${{ github.ref }}'.match(/refs\/tags\/(.*)\/v((.*)-(.*))/)[4];
       - name: Create Release
         id: create_release
         uses: ncipollo/release-action@v1
