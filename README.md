@@ -1,12 +1,13 @@
 # MiroEngine
 
-<div align="center"> <img src=https://github.com/hoprik/MiroEngine/blob/information/minecraft_title.png alt="logo"> </div>
+<div align="center"> <img src=https://github.com/hoprik/MiroEngine/blob/information/minecraft_title.png alt="logo"> 
 
 [![GitHub issues](https://img.shields.io/github/issues/hoprik/MiroEngine)](https://github.com/hoprik/MiroEngine/issues)
 [![GitHub stars](https://img.shields.io/github/stars/hoprik/MiroEngine)](https://github.com/hoprik/MiroEngine/stargazers)
 [![wakatime](https://wakatime.com/badge/user/dfcbe794-c409-4097-a53e-aedc2d8b21d6/project/475de062-7bf0-41c8-8c61-e3049b8d6f47.svg)]()
 [![documentation](https://img.shields.io/badge/documentation-8A2BE2)](https://hoprik.github.io/MiroDocumentation/)
-[![discord](https://img.shields.io/discord/1107386749346398369)]()
+<img src=https://img.shields.io/discord/1107386749346398369 alt="logo"> 
+</div>
 
 ## Description
 
