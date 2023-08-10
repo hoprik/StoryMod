@@ -1,6 +1,6 @@
 # MiroEngine
 
-[![Minecraft](https://github.com/hoprik/MiroEngine/blob/information/minecraft_title.png)]()
+<div align="center"> <img src=https://github.com/hoprik/MiroEngine/blob/information/minecraft_title.png alt="logo"> </div>
 
 [![GitHub issues](https://img.shields.io/github/issues/hoprik/MiroEngine)](https://github.com/hoprik/MiroEngine/issues)
 [![GitHub stars](https://img.shields.io/github/stars/hoprik/MiroEngine)](https://github.com/hoprik/MiroEngine/stargazers)
