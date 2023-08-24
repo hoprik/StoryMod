@@ -38,13 +38,16 @@ class KeyBind{
     @SubscribeEvent
     public static void onKeyInput(InputEvent.Key event) {
         if(ru.hoprik.storymod.Story.Engine.Utils.KeyBind.NPC_DIALOG.consumeClick()) {
-            try {
-                callbacks.get(idAction).callback.run();
-                idAction++;
-            }catch (IndexOutOfBoundsException e){
-                executer = null;
+              try {
+                if (idAction == callbacks.size()) {
+                    
+                }
+                else {
+                    callbacks.get(idAction).callback.run();
+                    idAction++;
+                }
+            } catch (Exception e) {
             }
-
         }
     }
 }
